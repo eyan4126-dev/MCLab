@@ -7,6 +7,8 @@
     <title>Movimentações</title>
     <link rel="stylesheet" href="<?= base_url('public/css/style.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
             </div>
 
             <!-- The Modal -->
-            <div class="modal fade" id="modalCadastro">
+            <div class="modal fade" id="modalMovimentação">
                 <div class="modal-dialog">
                     <div class="modal-content">
 
@@ -102,6 +104,10 @@
 
         </div>
     </div>
+
+    <script src="https://jsdelivr.net"></script>
+    <script src="<?= base_url('public/js/script.js'); ?>"></script>
+
 </body>
 
 </html>
