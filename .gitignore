@@ -11,11 +11,7 @@
 # =========================
 # PASTAS GERADAS EM RUNTIME
 # =========================
-/writable/cache/
-/writable/logs/
-/writable/session/
-/writable/uploads/
-/writable/debugbar/
+/writable/
 
 # =========================
 # SISTEMA / IDE
