@@ -1,2 +1,19 @@
-# MCLab
-MCLAB é um projeto desenvolvido no SENAI para aplicação prática de conceitos de desenvolvimento de software. A aplicação simula demandas reais, envolvendo interface, lógica de negócio e integração com serviços. O projeto está em constante evolução e foca em boas práticas e versionamento com Git.
+# MCLAB
+
+Projeto desenvolvido no SENAI para prática de desenvolvimento web utilizando PHP com CodeIgniter.
+
+## Sobre
+Aplicação em desenvolvimento com foco na organização do código e aplicação do padrão MVC.
+
+## Tecnologias
+- PHP
+- CodeIgniter
+- HTML
+- CSS
+- JavaScript
+- MySQL
+
+## Como rodar
+```bash
+git clone https://github.com/seu-usuario/mclab.git
+cd mclab
