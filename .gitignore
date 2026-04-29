@@ -1,0 +1,38 @@
+# =========================
+# ENV / CONFIG SENSÍVEL
+# =========================
+.env
+
+# =========================
+# DEPENDÊNCIAS
+# =========================
+/vendor/
+
+# =========================
+# PASTAS GERADAS EM RUNTIME
+# =========================
+/writable/cache/
+/writable/logs/
+/writable/session/
+/writable/uploads/
+/writable/debugbar/
+
+# =========================
+# SISTEMA / IDE
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# ARQUIVOS DE BUILD / TEMP
+# =========================
+*.log
+*.tmp
+*.swp
+
+# =========================
+# TESTES (opcional)
+# =========================
+/phpunit.result.cache
