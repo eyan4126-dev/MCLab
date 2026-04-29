@@ -1,0 +1,758 @@
+CRITICAL - 2026-04-15 00:03:34 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:11:06 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:19:58 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:22:28 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:34:10 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:39:10 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:46:57 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:48:50 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 110.
+ 1 APPPATH\Views\estoque.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 110)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 00:49:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 00:49:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: listar_insumos]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 00:50:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 00:50:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: listar_insumos]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 00:51:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 00:51:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: listar_insumos]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 00:51:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 00:51:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: listar_insumos]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 00:52:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 00:52:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: listar_insumos]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:00:08 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:04:34 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:05:50 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:05:52 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:06:14 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:06:15 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:06:17 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:06:34 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:06:42 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:07:02 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 108.
+ 1 APPPATH\Views\estoque.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 108)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 01:07:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 01:07:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: estoque]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 01:10:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mclab_bd', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 01:10:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: estoque]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 01:10:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mclab_bd', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 01:10:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: estoque]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 01:10:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mclab_bd', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 01:10:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: estoque]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 01:10:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mclab_bd', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 01:10:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: estoque]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 01:10:57 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'mclab_bd' in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mclab_bd', 3307, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'mclab_bd' in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 01:10:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'mclab_bd'
+[Method: GET, Route: estoque]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 01:11:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mclab_bd', 3306, '', 0)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#4 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#7 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\mclab\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mclab\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mclab\app\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome...')
+#3 C:\xampp\htdocs\mclab\app\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+#4 C:\xampp\htdocs\mclab\system\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+#5 C:\xampp\htdocs\mclab\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+#6 C:\xampp\htdocs\mclab\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mclab\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\mclab\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\mclab\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-15 01:11:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: estoque]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\InsumosModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos')
+ 3 APPPATH\Controllers\InsumosController.php(13): App\Models\InsumosModel->buscarTodosInsumos()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 01:17:01 --> ErrorException: Undefined variable $c
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 131.
+ 1 APPPATH\Views\estoque.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 131)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\InsumosController.php(15): view('estoque', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\InsumosController->listarInsumos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsumosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

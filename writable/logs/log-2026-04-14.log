@@ -1,0 +1,78 @@
+CRITICAL - 2026-04-14 22:39:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cadastrar_insumo.php"
+[Method: GET, Route: cadastrar_insumo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastrar_insumo.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('cadastrar_insumo', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('cadastrar_insumo')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->cadastro_insumo()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-14 22:39:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cadastrar_insumo.php"
+[Method: GET, Route: cadastrar_insumo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastrar_insumo.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('cadastrar_insumo', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('cadastrar_insumo')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->cadastro_insumo()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-14 22:39:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cadastrar_insumo.php"
+[Method: GET, Route: cadastrar_insumo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastrar_insumo.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('cadastrar_insumo', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('cadastrar_insumo')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->cadastro_insumo()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-14 22:52:50 --> ErrorException: Undefined variable $clientes
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 105.
+ 1 APPPATH\Views\estoque.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 105)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-14 23:12:11 --> ErrorException: Undefined variable $insumos
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 106.
+ 1 APPPATH\Views\estoque.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insumos', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 106)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-14 23:14:01 --> ErrorException: Undefined variable $c
+[Method: GET, Route: estoque]
+in APPPATH\Views\estoque.php on line 123.
+ 1 APPPATH\Views\estoque.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c', 'C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php', 123)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\mclab\\app\\Views\\estoque.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('estoque', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('estoque')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->estoque()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
