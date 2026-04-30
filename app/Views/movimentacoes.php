@@ -96,8 +96,16 @@
                 </div>
             </div>
 
-            <div class="card">
-                1
+            <div class="movimentacao-card">
+                <div class="left-card">
+                    ID: 1
+                </div>
+                <div class="center-card">
+                    Entrade de insumo
+                </div>
+                <div class="right-card">
+
+                </div>
             </div>
 
 

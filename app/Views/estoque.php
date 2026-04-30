@@ -38,9 +38,10 @@
                     style="margin-top: 0.5rem;">
                     Cadastrar Insumo <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
+                <!-- <input /> barra de pesquisa -->
             </div>
 
-            <!-- The Modal -->
+            <!-- modal para cadastrar insumos -->
             <div class="modal fade" id="modalCadastro">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -140,7 +141,7 @@
                             </td>
                             <td>
                                 <img class="icon-on-off" src="public/img/icon-on-off.png" />
-                            </td> <!-- $descricao $estoque_minimo -->
+                            </td>
                             <td>
                                 <img id=" abrirModal" class="tres-pontos" src="public/img/tres-pontos.png" href="#"
                                     data-bs-toggle="modal" data-bs-target="#modalInfo" data-bs-toggle="modal"
@@ -151,7 +152,7 @@
                         </tr>
                     <?php endforeach; ?>
 
-                    <!-- Estrutura do Modal -->
+                    <!-- modal para editar dados do insumo -->
                     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">

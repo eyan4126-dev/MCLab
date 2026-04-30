@@ -13,7 +13,7 @@
 
     <div class="fundo" style="background-image: url('public/img/loginpage.png')">
         <div class="form-container">
-            <form action="autenticar" method="POST">
+            <form action="<?= base_url('autenticar') ?>" method="POST">
                 <h2>Faça seu Login</h2>
 
                 <label>Usuário</label>
