@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= base_url('public/css/stylelogin.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 
 <body>
 
     <div class="fundo" style="background-image: url('public/img/loginpage.png')">
         <div class="form-container">
-            <form action="<?= base_url('autenticar') ?>" method="POST">
-                <h2>Faça seu Login</h2>
+            <form action="<?= base_url('cadastrar') ?>" method="POST">
+                <h2>Cadastre-se</h2>
 
                 <label>Usuário</label>
                 <input type="text" name="usuario" required>
 
                 <label>Senha</label>
                 <input type="password" name="senha" required>
-
-                <p>Não tem uma conta? <a href="cadastrar">Cadastre-se</a></p>
                 
-                <button type="submit"><strong>Entrar</strong></button>
+                <button type="submit"><strong>Cadastrar</strong></button>
             </form>
         </div>
     </div>

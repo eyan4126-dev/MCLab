@@ -218,3 +218,14 @@ tbody tr:hover {
 /*div {
     border: 0.1px solid red; /* Define borda sólida, 2px de espessura e vermelha 
 }*/
+
+.box {
+    width: 350px;
+    padding: 25px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}

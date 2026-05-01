@@ -6,6 +6,23 @@ use CodeIgniter\Model;
 
 class UsuariosModel extends Model
 {
-    protected $table = 'usuarios';
-    protected $primaryKey = 'id';
+    public function autenticar($usuario, $senha) {
+
+        $db = \Config\Database::connect();
+        $sql = "SELECT * FROM usuarios WHERE id = ? AND senha = ? LIMIT 1";
+
+        $query = $this->db->query($sql, [$usuario, $senha]);
+
+        return $query->getRowArray();
+    }
+
+    public function cadastrar($usuario, $senha) {
+
+        $db = \Config\Database::connect();
+        $sql = "INSERT INTO usuarios (usuario, senha) VALUES (?, ?)";
+
+        $query = $this->db->query($sql, [$usuario, $senha]);
+
+        return $query->getRowArray();
+    }
 }

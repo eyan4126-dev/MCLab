@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\UsuariosModel;
 
 class Home extends BaseController
 {
@@ -12,13 +13,33 @@ class Home extends BaseController
 
     public function autenticar()
     {
+        $model = new UsuariosModel();
+
         $usuario = $_POST['usuario'];
         $senha = $_POST['senha'];
 
-        if ($usuario == 'admin' && $senha == '1234') {
-            return view('dashboard');
+        $usuario = $model->autenticar($usuario, $senha);
+
+        if ($usuario) {
+            return redirect()->to(base_url('dashboard'));
         } else {
-            return view('index');
+            return redirect()->to(base_url('erro'));
+        }
+    }
+
+    public function cadastrar()
+    {
+        $model = new UsuariosModel();
+
+        $usuario = $_POST['usuario'];
+        $senha = $_POST['senha'];
+
+        $usuario = $model->cadastrar($usuario, $senha);
+
+        if ($usuario) {
+            return redirect()->to(base_url('dashboard'));
+        } else {
+            return redirect()->to(base_url('erro'));
         }
     }
 
@@ -40,6 +61,11 @@ class Home extends BaseController
     public function movimentacoes(): string
     {
         return view('movimentacoes');
+    }
+
+    public function cadastro(): string
+    {
+        return view('cadastro');
     }
 
 }
