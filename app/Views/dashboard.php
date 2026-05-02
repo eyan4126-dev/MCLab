@@ -32,6 +32,16 @@
                 <h2>Dashboard</h2>
             </div>
 
+            <div class="dash-card">
+                oi
+            </div>
+            <div class="dash-card">
+                oi
+            </div>
+            <div class="dash-card">
+                oi
+            </div>
+
         </div>
     </div>
 </body>
