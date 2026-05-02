@@ -97,18 +97,40 @@
             </div>
 
             <div class="movimentacao-card">
-                <div class="left-card">
+                <div class="left-card-entrada">
                     ID: 1
                 </div>
                 <div class="center-card">
-                    Entrade de insumo
+                    Entrada de insumo: <b>Álcool Isopropílico (IPA)</b> 70 L
                 </div>
                 <div class="right-card">
-
+                    <img id=" abrirModal" class="tres-pontos" src="public/img/tres-pontos.png" href="#"></img>
                 </div>
             </div>
 
+            <div class="movimentacao-card">
+                <div class="left-card-saida">
+                    ID: 2
+                </div>
+                <div class="center-card">
+                    Saída de insumo: <b>Álcool Isopropílico (IPA)</b> 20 L
+                </div>
+                <div class="right-card">
+                    <img id=" abrirModal" class="tres-pontos" src="public/img/tres-pontos.png" href="#"></img>
+                </div>
+            </div>
 
+            <div class="movimentacao-card">
+                <div class="left-card-entrada">
+                    ID: 3
+                </div>
+                <div class="center-card">
+                    Entrada de insumo: <b>Álcool Etílico (Etanol)</b> 70 L
+                </div>
+                <div class="right-card">
+                    <img id=" abrirModal" class="tres-pontos" src="public/img/tres-pontos.png" href="#"></img>
+                </div>
+            </div>
 
         </div>
     </div>

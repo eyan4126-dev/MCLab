@@ -177,12 +177,24 @@ tbody tr:hover {
     box-shadow: 0 4px 12px rgba(0.1, 0.1, 0.1, 0.3);
     margin-left: 9.0rem;
     margin-top: 1rem;
+    display: flex;
 }
 
-.left-card {
+.left-card-entrada {
     background: #267929;
     align-content: left;
-    width: 3rem;
+    width: 4rem;
+    height: 5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.left-card-saida {
+    background: #ff3a3a;
+    align-content: left;
+    width: 4rem;
     height: 5rem;
     text-align: center;
     padding-top: 1.5rem;
@@ -192,6 +204,7 @@ tbody tr:hover {
 
 .center-card {
     color: black;
+<<<<<<< HEAD
 }
 
 .dash-card {
@@ -204,4 +217,30 @@ tbody tr:hover {
     box-shadow: 0 4px 12px rgba(0.1, 0.1, 0.1, 0.3);
     margin: 3.0rem;
     display: flex;
+=======
+    text-align: left;
+    padding-top: 1.5rem;
+    padding-left: 0.5rem;
+    width: 50rem;
+    height: 5rem;
+}
+
+.right-card {
+    padding-right: 1rem;
+}
+
+/*div {
+    border: 0.1px solid red; /* Define borda sólida, 2px de espessura e vermelha 
+}*/
+
+.box {
+    width: 350px;
+    padding: 25px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+>>>>>>> 79e4a4f69aa3cbd610aadf756dc8821c7607b1bd
 }
