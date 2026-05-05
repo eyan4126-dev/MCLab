@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimentações</title>
-    <link rel="stylesheet" href="<?= base_url('public/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/mov_style.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -96,40 +96,72 @@
                 </div>
             </div>
 
-            <div class="movimentacao-card">
-                <div class="left-card-entrada">
-                    ID: 1
-                </div>
-                <div class="center-card">
-                    Entrada de insumo: <b>Álcool Isopropílico (IPA)</b> 70 L
-                </div>
-                <div class="right-card">
-                    <img id=" abrirModal" class="tres-pontos" src="public/img/tres-pontos.png" href="#"></img>
-                </div>
-            </div>
+            <div class="table-container mt-4 mx-4">
 
-            <div class="movimentacao-card">
-                <div class="left-card-saida">
-                    ID: 2
-                </div>
-                <div class="center-card">
-                    Saída de insumo: <b>Álcool Isopropílico (IPA)</b> 20 L
-                </div>
-                <div class="right-card">
-                    <img id=" abrirModal" class="tres-pontos" src="public/img/tres-pontos.png" href="#"></img>
-                </div>
-            </div>
+                <div class="table-responsive">
+                    <table class="tabela-moderna">
+                        <thead>
+                            <tr>
+                                <th>Data/Hora</th>
+                                <th>Tipo</th>
+                                <th>Insumo</th>
+                                <th>Quantidade</th>
+                                <th>Usuário</th>
+                            </tr>
+                        </thead>
 
-            <div class="movimentacao-card">
-                <div class="left-card-entrada">
-                    ID: 3
+                        <tbody>
+                            <?php if (!empty($movimentacoes)): ?>
+
+                                <?php foreach (array_reverse($movimentacoes) as $mov): ?>
+                                    <tr>
+
+                                        <td>
+                                            <?= date("d/m/Y H:i", strtotime($mov["data"])) ?>
+                                        </td>
+
+                                        <td>
+                                            <div class="tipo-cell">
+
+                                                <span class="tipo-icon <?= strtolower($mov["tipo"]) ?>"></span>
+
+                                                <span class="badge-tipo <?= strtolower($mov["tipo"]) ?>">
+                                                    <?= $mov["tipo"] ?>
+                                                </span>
+
+                                            </div>
+                                        </td>
+
+                                        <td class="insumo-nome">
+                                            <?= $mov["insumoNome"] ?>
+                                        </td>
+
+                                        <td class="<?= $mov["quantidade"] > 0 ? 'qtd-entrada' : 'qtd-saida' ?>">
+                                            <?= $mov["quantidade"] > 0 ? '+' : '' ?>
+                                            <?= $mov["quantidade"] ?>
+                                        </td>
+
+                                        <td class="usuario">
+                                            <?= $mov["usuario"] ?>
+                                        </td>
+
+                                    </tr>
+                                <?php endforeach; ?>
+
+                            <?php else: ?>
+                                <tr>
+                                    <td colspan="5">
+                                        <div class="empty-state">
+                                            Nenhuma movimentação registrada ainda
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endif; ?>
+                        </tbody>
+
+                    </table>
                 </div>
-                <div class="center-card">
-                    Entrada de insumo: <b>Álcool Etílico (Etanol)</b> 70 L
-                </div>
-                <div class="right-card">
-                    <img id=" abrirModal" class="tres-pontos" src="public/img/tres-pontos.png" href="#"></img>
-                </div>
+
             </div>
 
         </div>

@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.sidebar .logo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 0px;
+    transition: 0.3s;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px 40px;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu li a:hover {
+    background-color: #2a2a2a;
+}
+
+.menu .active {
+    background-color: #231f20;
+}
+
+.layout {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 0;
+    background-color: #fff;
+    margin-left: 220px;
+    align-items: center;
+}
+
+.cabecalho {
+    background-color: white;
+    height: 10vh;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    align-content: center;
+    padding: 10px
+}
+
+.modal-body {
+    border-radius: 5px;
+    background: white;
+    margin-top: 10px;
+}
+
+.modal-body label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-body input,
+.modal-body select,
+.modal-body option {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    height: 43px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: black;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-body button {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #267929;
+    color: white;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* container */
+.table-container {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* tabela */
+.tabela-moderna {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* header */
+.tabela-moderna thead {
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tabela-moderna th {
+    padding: 14px;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #6b7280;
+}
+
+/* linhas */
+.tabela-moderna td {
+    padding: 14px;
+    font-size: 14px;
+    color: #111827;
+}
+
+/* hover */
+.tabela-moderna tbody tr:hover {
+    background: #f3f4f6;
+}
+
+/* tipo (entrada/saida) */
+.tipo-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* bolinha do tipo */
+.tipo-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.tipo-icon.entrada {
+    background: #22c55e;
+}
+
+.tipo-icon.saida {
+    background: #ef4444;
+}
+
+/* badge */
+.badge-tipo {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid;
+}
+
+/* cores */
+.badge-tipo.entrada {
+    color: #166534;
+    background: #dcfce7;
+    border-color: #bbf7d0;
+}
+
+.badge-tipo.saida {
+    color: #991b1b;
+    background: #fee2e2;
+    border-color: #fecaca;
+}
+
+/* nome */
+.insumo-nome {
+    font-weight: 500;
+}
+
+/* quantidade */
+.qtd-entrada {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.qtd-saida {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* usuario */
+.usuario {
+    color: #6b7280;
+}
+
+/* vazio */
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 16px;
+}

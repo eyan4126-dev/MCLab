@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="<?= base_url('public/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/dash_style.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -25,25 +26,84 @@
             </div>
 
         </div>
-        
+
         <div class="content">
-        
+
             <div class="cabecalho">
                 <h2>Dashboard</h2>
             </div>
 
-            <div class="dash-card">
-                oi
-            </div>
-            <div class="dash-card">
-                oi
-            </div>
-            <div class="dash-card">
-                oi
+            <div class="dashboard">
+
+                <div class="cards">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div>
+                                <p class="label">Total de Insumos</p>
+                                <p class="value">5</p>
+                            </div>
+                            <i class="bx bx-package icon blue"></i>
+                        </div>
+                    </div>
+
+                    <div class="card border-red">
+                        <div class="card-content">
+                            <div>
+                                <p class="label">Alto Risco</p>
+                                <p class="value red">2</p>
+                            </div>
+                            <i class="bx bx-error icon red"></i>
+                        </div>
+                    </div>
+
+                    <div class="card border-orange">
+                        <div class="card-content">
+                            <div>
+                                <p class="label">Abaixo do Mínimo</p>
+                                <p class="value orange">1</p>
+                            </div>
+                            <i class="bx bx-trending-down icon orange"></i>
+                        </div>
+                    </div>
+
+                    <div class="card border-green">
+                        <div class="card-content">
+                            <div>
+                                <p class="label">Movimentações</p>
+                                <p class="value green">3</p>
+                            </div>
+                            <i class="bx bx-trending-up icon green"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="charts">
+
+                    <div class="chart-card">
+                        <h3>Distribuição por Nível de Risco</h3>
+                        <div class="chart-container">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3>Níveis de Estoque</h3>
+                        <canvas id="barChart"></canvas>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
+
+    </div>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="public/js/charts.js"></script>
 
 </html>
