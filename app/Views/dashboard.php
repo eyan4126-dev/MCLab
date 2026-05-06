@@ -15,13 +15,28 @@
     <div class="layout">
 
         <div class="sidebar">
-            <img src="public/img/logo.png" class="logo">
+            <div class="logo">
+                <img src="public/img/mclab-icon.png" width="50%">
+                <h3>MCLab</h3>
+            </div>
 
             <div class="menu">
                 <ul>
-                    <li class="active"><a href="dashboard">Dashboard</a></li>
-                    <li><a href="estoque">Estoque</a></li>
-                    <li><a href="movimentacoes">Movimentações</a></li>
+                    <li class="active">
+                        <a href="dashboard">
+                            <i class='bx bx-grid-alt'></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque">
+                            <i class='bx bx-package'></i> Estoque
+                        </a>
+                    </li>
+                    <li>
+                        <a href="movimentacoes">
+                            <i class='bx bx-history'></i> Movimentações
+                        </a>
+                    </li>
                 </ul>
             </div>
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?= base_url('public/css/mov_style.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -16,13 +17,28 @@
     <div class="layout">
 
         <div class="sidebar">
-            <img src="public/img/logo.png" class="logo">
+            <div class="logo">
+                <img src="public/img/mclab-icon.png" width="50%">
+                <h3>MCLab</h3>
+            </div>
 
             <div class="menu">
                 <ul>
-                    <li><a href="dashboard">Dashboard</a></li>
-                    <li><a href="estoque">Estoque</a></li>
-                    <li class="active"><a href="movimentacoes">Movimentações</a></li>
+                    <li>
+                        <a href="dashboard">
+                            <i class='bx bx-grid-alt'></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque">
+                            <i class='bx bx-package'></i> Estoque
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="movimentacoes">
+                            <i class='bx bx-history'></i> Movimentações
+                        </a>
+                    </li>
                 </ul>
             </div>
 

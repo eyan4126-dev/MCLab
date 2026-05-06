@@ -15,8 +15,8 @@ class Home extends BaseController
     {
         $model = new UsuariosModel();
 
-        $usuario = $_POST['usuario'];
-        $senha = $_POST['senha'];
+        $usuario = $this->request->getPost('usuario');
+        $senha = $this->request->getPost('usuario');
 
         $usuario = $model->autenticar($usuario, $senha);
 

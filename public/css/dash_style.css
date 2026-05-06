@@ -5,9 +5,9 @@ body {
 }
 
 .sidebar {
-    width: 220px;
-    height: 100vh;
-    background-color: black;
+    width: 230px;
+    height: 100%;
+    background: linear-gradient(135deg, #001F1E 0%, #012F2E 40%, #01413F 70%, #1C7A6D 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -15,8 +15,17 @@ body {
 }
 
 .sidebar .logo {
-    width: 100%;
+    width: 70%;
     box-sizing: border-box;
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+}
+
+.logo h3 {
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .menu {
@@ -46,11 +55,12 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #2a2a2a;
+    background-color: rgb(12, 72, 70);
+    transition: 0.5s;
 }
 
 .menu .active {
-    background-color: #231f20;
+    background-color:rgb(8, 51, 50);
 }
 
 .layout {
@@ -70,7 +80,8 @@ body {
     height: 10vh;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     align-content: center;
-    padding: 10px
+    padding: 10px;
+    padding-left: 15px;
 }
 
 .dashboard {
@@ -121,6 +132,10 @@ body {
     color: #dc2626;
 }
 
+.gray {
+    color: #1f2937;
+}
+
 .border-red {
     border-color: #fecaca;
 }
@@ -158,7 +173,7 @@ body {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .chart-card h3 {
@@ -170,7 +185,8 @@ body {
 
 .chart-container {
     width: 100%;
-    height: 350px; /* controla o tamanho */
+    height: 350px;
+    /* controla o tamanho */
     position: relative;
 }
 

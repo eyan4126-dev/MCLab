@@ -7,6 +7,7 @@
     <title>Estoque</title>
     <link rel="stylesheet" href="<?= base_url('public/css/estoque_style.css'); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -15,13 +16,28 @@
     <div class="layout">
 
         <div class="sidebar">
-            <img src="public/img/logo.png" class="logo">
+            <div class="logo">
+                <img src="public/img/mclab-icon.png" width="50%">
+                <h3>MCLab</h3>
+            </div>
 
             <div class="menu">
                 <ul>
-                    <li><a href="dashboard">Dashboard</a></li>
-                    <li class="active"><a href="estoque">Estoque</a></li>
-                    <li><a href="movimentacoes">Movimentações</a></li>
+                    <li>
+                        <a href="dashboard">
+                            <i class='bx bx-grid-alt'></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="estoque">
+                            <i class='bx bx-package'></i> Estoque
+                        </a>
+                    </li>
+                    <li>
+                        <a href="movimentacoes">
+                            <i class='bx bx-history'></i> Movimentações
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -33,19 +49,22 @@
                 <h2>Estoque</h2>
             </div>
 
-            <div class="px-4 mt-3">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCadastro"
+            <div class="px-4 mt-3 d-flex">
+                <button type="button" class="btn-cadastro" data-bs-toggle="modal" data-bs-target="#modalCadastro"
                     style="margin-top: 0.5rem;">
                     Cadastrar Insumo <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
-                <!-- <input /> barra de pesquisa -->
+                <div class="btn-filtro">
+                    <button class="filtro-btn active">Todos</button>
+                    <button class="filtro-btn green">Baixo</button>
+                    <button class="filtro-btn yellow">Médio</button>
+                    <button class="filtro-btn red">Alto</button>
+                </div>
+
             </div>
 
             <div class="filtros px-4 mt-3">
-                <button class="filtro-btn active">Todos</button>
-                <button class="filtro-btn green">Baixo</button>
-                <button class="filtro-btn yellow">Médio</button>
-                <button class="filtro-btn red">Alto</button>
+
             </div>
 
             <!-- modal para cadastrar insumos -->
@@ -143,17 +162,10 @@
                                     <?= date("d/m/Y", strtotime($i["data_validade"])) ?>
                                 </td>
 
-                                <td class="acoes">
-                                    <img class="icon-editar" src="public/img/icon-editar.png" data-bs-toggle="modal"
-                                        data-bs-target="#editModal" data-bs-id="<?= $i["id"] ?>"
-                                        data-bs-nome="<?= $i["nome"] ?>" data-bs-desc="<?= $i["descricao"] ?>"
-                                        data-bs-risco="<?= $i["risco"] ?>" data-bs-qtde="<?= $i["quantidade_atual"] ?>"
-                                        data-bs-un-medida="<?= $i["unidade_medida"] ?>"
-                                        data-bs-data-validade="<?= $i["data_validade"] ?>">
+                                <td class="acoes"><i class="bx bx-eye icon gray"></i>
+                                    <i class="bx bx-pencil icon gray"></i>
 
-                                    <img class="tres-pontos" src="public/img/tres-pontos.png" data-bs-toggle="modal"
-                                        data-bs-target="#modalInfo" data-bs-nome="<?= $i["nome"] ?>"
-                                        data-bs-desc="<?= $i["descricao"] ?>">
+
                                 </td>
 
                             </tr>
