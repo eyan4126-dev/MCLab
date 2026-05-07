@@ -22,11 +22,15 @@ $routes->post('autenticar','Home::autenticar');
 //rota para página de erro de login
 $routes->get('erro','Home::autenticar');
 
-//rota para cadastrar usuario
+//rota para view de cadastro de usuario
 $routes->get('cadastrar','Home::cadastro');
+
+//rota para cadastrar usuario
+$routes->post('cadastrar','Home::cadastrar');
 
 // rota para cadastrar insumos no BD
 $routes->post('cadastrar_insumo','InsumosController::cadastrarInsumo');
 
-
+// rota para cadastrar movimentações no BD
+$routes->post('cadastrar_movimentacao','Home::cadastrarMovimentacao');
 

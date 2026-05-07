@@ -55,10 +55,25 @@
                     Cadastrar Insumo <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
                 <div class="filtros m-0">
-                    <button class="filtro-btn active">Todos</button>
-                    <button class="filtro-btn">Baixo</button>
-                    <button class="filtro-btn">Médio</button>
-                    <button class="filtro-btn">Alto</button>
+                    <a href="<?= base_url('estoque') ?>"
+                        class="filtro-btn <?= !isset($_GET['risco']) ? 'active' : '' ?>">
+                        Todos
+                    </a>
+
+                    <a href="<?= base_url('estoque?risco=baixo') ?>"
+                        class="filtro-btn <?= ($_GET['risco'] ?? '') == 'baixo' ? 'active' : '' ?>">
+                        Baixo
+                    </a>
+
+                    <a href="<?= base_url('estoque?risco=medio') ?>"
+                        class="filtro-btn <?= ($_GET['risco'] ?? '') == 'medio' ? 'active' : '' ?>">
+                        Médio
+                    </a>
+
+                    <a href="<?= base_url('estoque?risco=alto') ?>"
+                        class="filtro-btn <?= ($_GET['risco'] ?? '') == 'alto' ? 'active' : '' ?>">
+                        Alto
+                    </a>
                 </div>
             </div>
 
@@ -83,9 +98,9 @@
                                 <label>Nível de risco</label>
                                 <select name="risco" required>
                                     <option></option>
-                                    <option>🟢 Baixo</option>
-                                    <option>🟡 Médio</option>
-                                    <option>🔴 Alto</option>
+                                    <option value="baixo">🟢 Baixo</option>
+                                    <option value="medio">🟡 Médio</option>
+                                    <option value="alto">🔴 Alto</option>
                                 </select>
 
                                 <label>Unidade de medida</label>

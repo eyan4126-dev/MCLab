@@ -51,7 +51,7 @@
             </div>
 
             <div class="px-4 mt-3">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalMovimentação"
+                <button type="button" class="btn-cadastro" data-bs-toggle="modal" data-bs-target="#modalMovimentação"
                     style="margin-top: 0.5rem;">
                     Cadastrar Movimentação <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
@@ -71,38 +71,28 @@
                         <!-- Modal body -->
                         <div class="modal-body">
 
-                            <form action=<?= base_url('cadastrar_insumo') ?> method="POST">
-                                <label>Nome</label>
-                                <input type="text" name="nome" required>
+                            <form action=<?= base_url('cadastrar_movimentacao') ?> method="POST">
+                                <label>ID do Insumo</label>
+                                <input type="number" name="insumo_id" required>
+
+                                <label>ID do Usuario</label>
+                                <input type="number" name="usuario_id" required>
 
                                 <label>Tipo de Movimentação</label>
-                                <select name="risco" required>
+                                <select name="tipo" required>
                                     <option></option>
-                                    <option>🟢 Entrada</option>
-                                    <option>🔴 Saída</option>
+                                    <option value="entrada">🟢 Entrada</option>
+                                    <option value="saida">🔴 Saída</option>
                                 </select>
-
-                                <label>Unidade de medida</label>
-                                <select name="unidade_medida" required>
-                                    <option></option>
-                                    <option>kg</option>
-                                    <option>g</option>
-                                    <option>mg</option>
-                                    <option>L</option>
-                                    <option>ml</option>
-                                </select>
-
-                                <label>Descrição</label>
-                                <input type="text" name="descricao" required>
 
                                 <label>Quantidade</label>
                                 <input type="number" name="quantidade" required>
 
-                                <label>Estoque mínimo</label>
-                                <input type="number" name="estoque_minimo" required>
-
                                 <label>Data da Movimentação</label>
                                 <input type="date" name="data_movimentacao" required>
+
+                                <label>Observação</label>
+                                <input type="text" name="observacao" required>
 
                                 <button type="submit"><strong>Cadastrar</strong></button>
                             </form>
@@ -133,7 +123,7 @@
                                     <tr>
 
                                         <td>
-                                            <?= date("d/m/Y H:i", strtotime($mov["data"])) ?>
+                                            <?= date("d/m/Y H:i", strtotime($mov["data_movimentacao"])) ?>
                                         </td>
 
                                         <td>
@@ -149,7 +139,7 @@
                                         </td>
 
                                         <td class="insumo-nome">
-                                            <?= $mov["insumoNome"] ?>
+                                            <?= $mov["insumo_id"] ?>
                                         </td>
 
                                         <td class="<?= $mov["quantidade"] > 0 ? 'qtd-entrada' : 'qtd-saida' ?>">
@@ -158,7 +148,7 @@
                                         </td>
 
                                         <td class="usuario">
-                                            <?= $mov["usuario"] ?>
+                                            <?= $mov["usuario_id"] ?>
                                         </td>
 
                                     </tr>

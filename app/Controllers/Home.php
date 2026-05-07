@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\UsuariosModel;
+use App\Models\InsumosModel;
 
 class Home extends BaseController
 {
@@ -37,7 +38,7 @@ class Home extends BaseController
         $usuario = $model->cadastrar($usuario, $senha);
 
         if ($usuario) {
-            return redirect()->to(base_url('dashboard'));
+            return redirect()->to(base_url('/'));
         } else {
             return redirect()->to(base_url('erro'));
         }
@@ -67,5 +68,37 @@ class Home extends BaseController
     {
         return view('cadastro');
     }
+
+    public function cadastrarMovimentacao()
+    {
+        $model = new InsumosModel();
+
+        $insumo_id = $this->request->getPost("insumo_id");
+        $usuario_id = $this->request->getPost("usuario_id");
+        $tipo = $this->request->getPost("tipo");
+        $quantidade = $this->request->getPost("quantidade");
+        $data_movimentacao = $this->request->getPost("data_movimentacao");
+        $observacao = $this->request->getPost("estoque_minimo");
+
+        $model->cadastrarMovimentacao($insumo_id, $usuario_id, $tipo, $quantidade, $data_movimentacao, $observacao);
+
+        return redirect()->to(base_url('estoque'));
+    }
+
+    //controller para filtrar consulta de estoque
+    /* public function estoqueFiltros()
+    {
+        $risco = $this->request->getGet('risco');
+
+        $model = new InsumosModel();
+
+        if ($risco) {
+            $data['insumos'] = $model->where('risco', $risco)->findAll();
+        } else {
+            $data['insumos'] = $model->findAll();
+        }
+
+        return view('estoque', $data);
+    } */
 
 }

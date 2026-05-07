@@ -23,6 +23,6 @@ class UsuariosModel extends Model
 
         $query = $this->db->query($sql, [$usuario, $senha]);
 
-        return $query->getRowArray();
+        return view('index.php');
     }
 }

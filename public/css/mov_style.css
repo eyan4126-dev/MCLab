@@ -284,3 +284,18 @@ body {
     color: #6b7280;
     font-size: 16px;
 }
+
+.btn-cadastro {
+    background-color: #0b1120;
+    border-color: #001F1E;
+    border-radius: 14px;
+    color: white;
+    padding: 8px 14px;
+}
+
+.btn-cadastro:hover {
+    opacity: 0.8;
+    border-color: #001F1E;
+    color: white;
+    transition: 0.5s;
+}
