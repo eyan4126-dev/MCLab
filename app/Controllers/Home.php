@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\MovimentacoesModel;
 use App\Models\UsuariosModel;
 use App\Models\InsumosModel;
 
@@ -59,14 +60,27 @@ class Home extends BaseController
         return view('estoque');
     }
 
-    public function movimentacoes(): string
-    {
-        return view('movimentacoes');
-    }
+    public function movimentacoes()
+{
+    $model = new MovimentacoesModel();
+
+    $data['movimentacoes'] = $model->findAll();
+
+    return view('movimentacoes', $data);
+}
 
     public function cadastro(): string
     {
         return view('cadastro');
+    }
+
+    public function listarMovimentacao()
+    {
+        $model = new MovimentacoesModel();
+
+        $dados['movimentacoes'] = $model->buscarTodasMovimentacoes();
+
+        return view('movimentacoes', $dados);
     }
 
     public function cadastrarMovimentacao()
@@ -84,21 +98,4 @@ class Home extends BaseController
 
         return redirect()->to(base_url('estoque'));
     }
-
-    //controller para filtrar consulta de estoque
-    /* public function estoqueFiltros()
-    {
-        $risco = $this->request->getGet('risco');
-
-        $model = new InsumosModel();
-
-        if ($risco) {
-            $data['insumos'] = $model->where('risco', $risco)->findAll();
-        } else {
-            $data['insumos'] = $model->findAll();
-        }
-
-        return view('estoque', $data);
-    } */
-
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimentações</title>
     <link rel="stylesheet" href="<?= base_url('public/css/mov_style.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -89,7 +88,7 @@
                                 <input type="number" name="quantidade" required>
 
                                 <label>Data da Movimentação</label>
-                                <input type="date" name="data_movimentacao" required>
+                                <input type="datetime-local" name="data_movimentacao" required>
 
                                 <label>Observação</label>
                                 <input type="text" name="observacao" required>
@@ -142,7 +141,7 @@
                                             <?= $mov["insumo_id"] ?>
                                         </td>
 
-                                        <td class="<?= $mov["quantidade"] > 0 ? 'qtd-entrada' : 'qtd-saida' ?>">
+                                        <td class="<?= $mov["tipo"] == 'entrada' ? 'qtd-entrada' : 'qtd-saida' ?>">
                                             <?= $mov["quantidade"] > 0 ? '+' : '' ?>
                                             <?= $mov["quantidade"] ?>
                                         </td>
@@ -173,7 +172,6 @@
         </div>
     </div>
 
-    <script src="https://jsdelivr.net"></script>
     <script src="<?= base_url('public/js/script.js'); ?>"></script>
 
 </body>

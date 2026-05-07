@@ -9,6 +9,7 @@ class UsuariosModel extends Model
     public function autenticar($usuario, $senha) {
 
         $db = \Config\Database::connect();
+        
         $sql = "SELECT * FROM usuarios WHERE usuario = ? AND senha = ? LIMIT 1";
 
         $query = $this->db->query($sql, [$usuario, $senha]);
