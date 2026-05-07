@@ -19,12 +19,12 @@
                 <h1>Login</h1>
             </div>
             <div class="input-box">
-                <input placeholder="Usuário" type="text" readonly onfocus="this.removeAttribute('readonly');"
+                <input name="usuario" placeholder="Usuário" type="text" readonly onfocus="this.removeAttribute('readonly');"
                     autocomplete="off" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input placeholder="Senha" type="password" readonly onfocus="this.removeAttribute('readonly');"
+                <input name="senha" placeholder="Senha" type="password" readonly onfocus="this.removeAttribute('readonly');"
                     autocomplete="off" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
