@@ -118,7 +118,4 @@
     </div>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="public/js/charts.js"></script>
-
 </html>

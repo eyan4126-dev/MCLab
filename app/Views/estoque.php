@@ -49,22 +49,17 @@
                 <h2>Estoque</h2>
             </div>
 
-            <div class="px-4 mt-3 d-flex">
+            <div class="px-4 mt-3 d-flex align-items-center justify-content-between">
                 <button type="button" class="btn-cadastro" data-bs-toggle="modal" data-bs-target="#modalCadastro"
                     style="margin-top: 0.5rem;">
                     Cadastrar Insumo <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
-                <div class="btn-filtro">
+                <div class="filtros m-0">
                     <button class="filtro-btn active">Todos</button>
-                    <button class="filtro-btn green">Baixo</button>
-                    <button class="filtro-btn yellow">Médio</button>
-                    <button class="filtro-btn red">Alto</button>
+                    <button class="filtro-btn">Baixo</button>
+                    <button class="filtro-btn">Médio</button>
+                    <button class="filtro-btn">Alto</button>
                 </div>
-
-            </div>
-
-            <div class="filtros px-4 mt-3">
-
             </div>
 
             <!-- modal para cadastrar insumos -->
