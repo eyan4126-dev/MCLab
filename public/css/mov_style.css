@@ -172,7 +172,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* container */
 .table-container {
     background: #fff;
     border-radius: 12px;
@@ -180,15 +179,13 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-/* tabela */
 .tabela-moderna {
     width: 100%;
     border-collapse: collapse;
 }
 
-/* header */
 .tabela-moderna thead {
-    background: #f9fafb;
+    background: #0b1120;
     border-bottom: 1px solid #e5e7eb;
 }
 
@@ -197,17 +194,15 @@ body {
     text-align: left;
     font-size: 12px;
     text-transform: uppercase;
-    color: #6b7280;
+    color: #fff;
 }
 
-/* linhas */
 .tabela-moderna td {
     padding: 14px;
     font-size: 14px;
     color: #111827;
 }
 
-/* hover */
 .tabela-moderna tbody tr:hover {
     background: #f3f4f6;
 }
@@ -234,7 +229,6 @@ body {
     background: #ef4444;
 }
 
-/* badge */
 .badge-tipo {
     padding: 4px 10px;
     border-radius: 999px;
@@ -243,7 +237,6 @@ body {
     border: 1px solid;
 }
 
-/* cores */
 .badge-tipo.entrada {
     color: #166534;
     background: #dcfce7;
@@ -256,12 +249,10 @@ body {
     border-color: #fecaca;
 }
 
-/* nome */
 .insumo-nome {
     font-weight: 500;
 }
 
-/* quantidade */
 .qtd-entrada {
     color: #16a34a;
     font-weight: 600;
@@ -272,12 +263,10 @@ body {
     font-weight: 600;
 }
 
-/* usuario */
 .usuario {
     color: #6b7280;
 }
 
-/* vazio */
 .empty-state {
     text-align: center;
     padding: 40px;
