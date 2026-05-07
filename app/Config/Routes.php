@@ -34,3 +34,5 @@ $routes->post('cadastrar_insumo','InsumosController::cadastrarInsumo');
 // rota para cadastrar movimentações no BD
 $routes->post('cadastrar_movimentacao','Home::cadastrarMovimentacao');
 
+// rota para filtras consulta de insumos no estoque
+$routes->get('/estoque', 'InsumosController::filtrarEstoque');

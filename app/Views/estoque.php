@@ -55,25 +55,27 @@
                     Cadastrar Insumo <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
                 <div class="filtros m-0">
+
                     <a href="<?= base_url('estoque') ?>"
-                        class="filtro-btn <?= !isset($_GET['risco']) ? 'active' : '' ?>">
+                        class="filtro-btn filtro-todos <?= !isset($_GET['risco']) ? 'active' : '' ?>">
                         Todos
                     </a>
 
                     <a href="<?= base_url('estoque?risco=baixo') ?>"
-                        class="filtro-btn <?= ($_GET['risco'] ?? '') == 'baixo' ? 'active' : '' ?>">
+                        class="filtro-btn filtro-baixo <?= ($_GET['risco'] ?? '') == 'baixo' ? 'active' : '' ?>">
                         Baixo
                     </a>
 
                     <a href="<?= base_url('estoque?risco=medio') ?>"
-                        class="filtro-btn <?= ($_GET['risco'] ?? '') == 'medio' ? 'active' : '' ?>">
+                        class="filtro-btn filtro-medio <?= ($_GET['risco'] ?? '') == 'medio' ? 'active' : '' ?>">
                         Médio
                     </a>
 
                     <a href="<?= base_url('estoque?risco=alto') ?>"
-                        class="filtro-btn <?= ($_GET['risco'] ?? '') == 'alto' ? 'active' : '' ?>">
+                        class="filtro-btn filtro-alto <?= ($_GET['risco'] ?? '') == 'alto' ? 'active' : '' ?>">
                         Alto
                     </a>
+
                 </div>
             </div>
 
@@ -148,38 +150,135 @@
                     </thead>
 
                     <tbody>
-                        <?php foreach ($insumos as $i): ?>
+
+                        <?php if (!empty($insumos)): ?>
+
+                            <?php foreach ($insumos as $i): ?>
+                                <tr>
+
+                                    <td><?= $i["id"] ?></td>
+
+                                    <td class="nome-click" data-bs-toggle="modal" data-bs-target="#modalInfo"
+                                        data-bs-nome="<?= $i["nome"] ?>" data-bs-desc="<?= $i["descricao"] ?>">
+
+                                        <?= $i["nome"] ?>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="badge-risco <?= strtolower($i["risco"]) ?>">
+                                            <?= ucfirst($i["risco"]) ?>
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <?= $i["quantidade_atual"] . " " . $i["unidade_medida"] ?>
+                                    </td>
+
+                                    <td>
+                                        <?= date("d/m/Y", strtotime($i["data_validade"])) ?>
+                                    </td>
+
+                                    <td class="acoes">
+
+                                        <i class='bx bx-show icon' data-bs-toggle="modal" data-bs-target="#modalVisualizar"
+                                            data-bs-nome="<?= $i["nome"] ?>" data-bs-descricao="
+                                    <?= $i["descricao"] ?>" data-bs-quantidade="
+                                    <?= $i["quantidade_atual"] ?>" data-bs-validade="
+                                    <?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
+                                        </i>
+
+                                        <i class='bx bx-pencil icon' data-bs-toggle="modal" data-bs-target="#modalEditar"
+                                            data-bs-id="<?= $i["id"] ?>" data-bs-nome="
+                                    <?= $i["nome"] ?>" data-bs-descricao="
+                                    <?= $i["descricao"] ?>">
+                                        </i>
+
+                                    </td>
+
+                                </tr>
+                            <?php endforeach; ?>
+
+                        <?php else: ?>
+
                             <tr>
+                                <td colspan="6" class="text-center py-5">
 
-                                <td><?= $i["id"] ?></td>
+                                    <div class="d-flex flex-column align-items-center gap-2">
 
-                                <td class="nome-click" data-bs-toggle="modal" data-bs-target="#modalInfo"
-                                    data-bs-nome="<?= $i["nome"] ?>" data-bs-desc="<?= $i["descricao"] ?>">
-                                    <?= $i["nome"] ?>
-                                </td>
+                                        <i class='bx bx-package text-secondary' style="font-size: 3rem;"></i>
 
-                                <td>
-                                    <span class="badge-risco <?= strtolower($i["risco"]) ?>">
-                                        <?= $i["risco"] ?>
-                                    </span>
-                                </td>
+                                        <span class="text-secondary fs-5">
+                                            Nenhum insumo encontrado
+                                        </span>
 
-                                <td>
-                                    <?= $i["quantidade_atual"] . " " . $i["unidade_medida"] ?>
-                                </td>
-
-                                <td>
-                                    <?= date("d/m/Y", strtotime($i["data_validade"])) ?>
-                                </td>
-
-                                <td class="acoes"><i class="bx bx-eye icon gray"></i>
-                                    <i class="bx bx-pencil icon gray"></i>
-
+                                    </div>
 
                                 </td>
-
                             </tr>
-                        <?php endforeach; ?>
+
+                        <?php endif; ?>
+
+                        <!-- modal com informações do insumo -->
+                        <div class="modal fade" id="modalVisualizar">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Detalhes do Insumo</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                        <p><strong>Nome:</strong> <span id="viewNome"></span></p>
+
+                                        <p><strong>Descrição:</strong> <span id="viewDescricao"></span></p>
+
+                                        <p><strong>Quantidade:</strong> <span id="viewQuantidade"></span></p>
+
+                                        <p><strong>Validade:</strong> <span id="viewValidade"></span></p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- modal para editar insumo -->
+                        <div class="modal fade" id="modalEditar">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Editar Insumo</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                        <form action="<?= base_url('editar_insumo') ?>" method="POST">
+
+                                            <input type="hidden" name="id" id="editId">
+
+                                            <label>Nome</label>
+                                            <input type="text" name="nome" id="editNome">
+
+                                            <label>Descrição</label>
+                                            <input type="text" name="descricao" id="editDescricao">
+
+                                            <button type="submit">
+                                                Salvar Alterações
+                                            </button>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </tbody>
                 </table>
             </div>

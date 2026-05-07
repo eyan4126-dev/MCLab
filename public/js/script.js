@@ -42,3 +42,40 @@ editModal.addEventListener('show.bs.modal', event => {
     modalBodyInputUnMedida.value = unidade_medida
     modalBodyInputDataValidade.value = data_validade
 })
+
+    // Modal de visualização
+    const modalVisualizar = document.getElementById('modalVisualizar');
+
+    modalVisualizar.addEventListener('show.bs.modal', function (event) {
+
+        const button = event.relatedTarget;
+
+        document.getElementById('viewNome').textContent =
+            button.getAttribute('data-bs-nome');
+
+        document.getElementById('viewDescricao').textContent =
+            button.getAttribute('data-bs-descricao');
+
+        document.getElementById('viewQuantidade').textContent =
+            button.getAttribute('data-bs-quantidade');
+
+        document.getElementById('viewValidade').textContent =
+            button.getAttribute('data-bs-validade');
+    });
+
+    // Modal para edição de insumo
+    const modalEditar = document.getElementById('modalEditar');
+
+    modalEditar.addEventListener('show.bs.modal', function (event) {
+
+        const button = event.relatedTarget;
+
+        document.getElementById('editId').value =
+            button.getAttribute('data-bs-id');
+
+        document.getElementById('editNome').value =
+            button.getAttribute('data-bs-nome');
+
+        document.getElementById('editDescricao').value =
+            button.getAttribute('data-bs-descricao');
+    });

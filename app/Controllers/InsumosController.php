@@ -3,11 +3,11 @@
 namespace App\Controllers;
 
 use App\Models\InsumosModel;
-use Codeigniter\HTTP\ResponseInterface;
 
 class InsumosController extends BaseController
 {
-    public function listarInsumos() {
+    public function listarInsumos()
+    {
         $model = new InsumosModel();
 
         $dados['insumos'] = $model->buscarTodosInsumos();
@@ -27,7 +27,32 @@ class InsumosController extends BaseController
         $data_validade = $this->request->getPost("data_validade");
 
         $model->inserirInsumo($nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade);
-    
+
         return redirect()->to(base_url('estoque'));
+    }
+
+    public function filtrarEstoque()
+    {
+        $model = new InsumosModel();
+
+        // pega o filtro da URL
+        $risco = $this->request->getGet('risco');
+
+        // se existir filtro
+        if ($risco) {
+
+            $insumos = $model
+                ->where('risco', $risco)
+                ->findAll();
+
+        } else {
+
+            // sem filtro = todos
+            $insumos = $model->findAll();
+        }
+
+        return view('estoque', [
+            'insumos' => $insumos
+        ]);
     }
 }
