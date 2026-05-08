@@ -49,11 +49,31 @@
                 <h2>Movimentações</h2>
             </div>
 
-            <div class="px-4 mt-3">
+            <!-- BOTÃO PARA CADASTRAR MOVIMENTAÇÕES -->
+            <div class="px-4 mt-3 d-flex align-items-center justify-content-between">
                 <button type="button" class="btn-cadastro" data-bs-toggle="modal" data-bs-target="#modalMovimentação"
                     style="margin-top: 0.5rem;">
                     Cadastrar Movimentação <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
+
+
+                <!-- BOTÕES PARA FILTRAR MOVIMENTAÇÕES -->
+                <div class="filtros m-0">
+                    <a href="<?= base_url('movimentacoes') ?>"
+                        class="filtro-btn filtro-todos <?= !isset($_GET['tipo']) ? 'active' : '' ?>">
+                        Todas
+                    </a>
+
+                    <a href="<?= base_url('movimentacoes?tipo=entrada') ?>"
+                        class="filtro-btn filtro-entrada <?= ($_GET['tipo'] ?? '') == 'entrada' ? 'active' : '' ?>">
+                        Entrada
+                    </a>
+
+                    <a href="<?= base_url('movimentacoes?tipo=saida') ?>"
+                        class="filtro-btn filtro-saida <?= ($_GET['tipo'] ?? '') == 'saida' ? 'active' : '' ?>">
+                        Saída
+                    </a>
+                </div>
             </div>
 
             <!-- modal de cadastro de movimentações -->
@@ -138,7 +158,7 @@
                                         </td>
 
                                         <td class="insumo-nome">
-                                            <?= $mov["insumo_id"] ?>
+                                            <?= $mov["insumo_nome"] ?>
                                         </td>
 
                                         <td class="<?= $mov["tipo"] == 'entrada' ? 'qtd-entrada' : 'qtd-saida' ?>">
@@ -147,7 +167,7 @@
                                         </td>
 
                                         <td class="usuario">
-                                            <?= $mov["usuario_id"] ?>
+                                            <?= $mov["usuario_nome"] ?>
                                         </td>
 
                                     </tr>

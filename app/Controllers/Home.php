@@ -55,35 +55,22 @@ class Home extends BaseController
         return view('dashboard', $data);
     }
 
-    public function cadastro_insumo(): string
-    {
-        return view('cadastrar_insumo');
-    }
-
-    public function estoque(): string
-    {
-        return view('estoque');
-    }
-
-    public function movimentacoes()
-    {
-        $model = new MovimentacoesModel();
-
-        $data['movimentacoes'] = $model->findAll();
-
-        return view('movimentacoes', $data);
-    }
-
     public function cadastro(): string
     {
         return view('cadastro');
     }
 
-    public function listarMovimentacao()
+    public function listarMovimentacoes()
     {
         $model = new MovimentacoesModel();
 
-        $dados['movimentacoes'] = $model->buscarTodasMovimentacoes();
+        $tipo = $this->request->getGet('tipo');
+
+        if ($tipo) {
+            $dados['movimentacoes'] = $model->buscarMovimentacaoPorTipo($tipo);
+        } else {
+            $dados['movimentacoes'] = $model->buscarTodasMovimentacoes();
+        }
 
         return view('movimentacoes', $dados);
     }

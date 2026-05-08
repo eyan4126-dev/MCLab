@@ -5,34 +5,44 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+/* ------ ROTAS GET PARA REDIRECIONAMENTO DE PÁGINA ------ */
+
+// rota para página de login
 $routes->get('/', 'Home::index');
 
-// rota do sidebar para o dashboard
-$routes->get('dashboard','Home::dashboard');
-
-// rota do sidebar para o estoque com READ dos insumos
-$routes->get('estoque','InsumosController::listarInsumos');
-
-// rota do sidebar para as movimentações
-$routes->get('movimentacoes','Home::movimentacoes');
-
-// rota para o usuario fazer login
-$routes->post('autenticar','Home::autenticar');
+//rota para página de cadastro de usuário
+$routes->get('cadastrar','Home::cadastro');
 
 //rota para página de erro de login
 $routes->get('erro','Home::autenticar');
 
-//rota para view de cadastro de usuario
-$routes->get('cadastrar','Home::cadastro');
+// rota do sidebar para página do dashboard
+$routes->get('dashboard','Home::dashboard');
 
-//rota para cadastrar usuario
+// rota do sidebar para página do estoque
+$routes->get('estoque','InsumosController::listarInsumos');
+
+// rota do sidebar para página das movimentações
+$routes->get('movimentacoes','Home::listarMovimentacoes');
+
+
+/* ------ ROTAS POST PARA ENVIO DE DADOS ------ */
+
+// rota dos dados de login
+$routes->post('autenticar','Home::autenticar');
+
+//rota dos dados de cadastro de usuário
 $routes->post('cadastrar','Home::cadastrar');
 
-// rota para cadastrar insumos no BD
+// rota dos dados de cadastro de insumos
 $routes->post('cadastrar_insumo','InsumosController::cadastrarInsumo');
 
-// rota para cadastrar movimentações no BD
-$routes->post('cadastrar_movimentacao','Home::cadastrarMovimentacao');
+// rota dos dados de edição de insumos
+$routes->post('editar_insumo/(:num)','InsumosController::atualizarInsumo');
 
-// rota para filtras consulta de insumos no estoque
-$routes->get('/estoque', 'InsumosController::filtrarEstoque');
+// rota do modal de edição de insumo para estoque atualizado
+$routes->post('estoque','InsumosController::atualizarInsumo');
+
+// rota dos dados de cadastro de movimentações
+$routes->post('cadastrar_movimentacao','Home::cadastrarMovimentacao');

@@ -56,7 +56,7 @@
                         <div class="card-content">
                             <div>
                                 <p class="label">Total de Insumos</p>
-                                <p class="value"><?php $resumo['total'] ?></p>
+                                <p class="value"><?= $resumo['total'] ?></p>
                             </div>
                             <i class="bx bx-package icon blue"></i>
                         </div>
@@ -66,7 +66,7 @@
                         <div class="card-content">
                             <div>
                                 <p class="label">Alto Risco</p>
-                                <p class="value red"><?php $resumo['risco_alto'] ?></p>
+                                <p class="value red"><?= $resumo['risco_alto'] ?></p>
                             </div>
                             <i class="bx bx-error icon red"></i>
                         </div>
@@ -76,7 +76,7 @@
                         <div class="card-content">
                             <div>
                                 <p class="label">Abaixo do Mínimo</p>
-                                <p class="value orange"><?php $resumo['estoque_baixo'] ?></p>
+                                <p class="value orange"><?= $resumo['estoque_baixo'] ?></p>
                             </div>
                             <i class="bx bx-trending-down icon orange"></i>
                         </div>
@@ -86,7 +86,7 @@
                         <div class="card-content">
                             <div>
                                 <p class="label">Movimentações</p>
-                                <p class="value green"><?php $resumo['movimentacoes'] ?></p>
+                                <p class="value green"><?= $resumo['movimentacoes'] ?></p>
                             </div>
                             <i class="bx bx-trending-up icon green"></i>
                         </div>

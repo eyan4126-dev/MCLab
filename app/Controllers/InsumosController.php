@@ -17,7 +17,7 @@ class InsumosController extends BaseController
         } else {
             $dados['insumos'] = $model->buscarTodosInsumos();
         }
-        
+
         return view('estoque', $dados);
     }
 
@@ -25,6 +25,24 @@ class InsumosController extends BaseController
     {
         $model = new InsumosModel();
 
+        $nome =             $this->request->getPost("nome");
+        $risco =            $this->request->getPost("risco");
+        $unidade_medida =   $this->request->getPost("unidade_medida");
+        $descricao =        $this->request->getPost("descricao");
+        $quantidade_atual = $this->request->getPost("quantidade_atual");
+        $estoque_minimo =   $this->request->getPost("estoque_minimo");
+        $data_validade =    $this->request->getPost("data_validade");
+
+        $model->inserirInsumo($nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade);
+
+        return redirect()->to(base_url('estoque'));
+    }
+
+    public function atualizarInsumo()
+    {
+        $model = new InsumosModel();
+
+        $id = $this->request->getPost("id");
         $nome = $this->request->getPost("nome");
         $risco = $this->request->getPost("risco");
         $unidade_medida = $this->request->getPost("unidade_medida");
@@ -33,8 +51,8 @@ class InsumosController extends BaseController
         $estoque_minimo = $this->request->getPost("estoque_minimo");
         $data_validade = $this->request->getPost("data_validade");
 
-        $model->inserirInsumo($nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade);
-
-        return redirect()->to(base_url('estoque'));
+        if($model->atualizarInsumo($id, $nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade)) {
+            return redirect()->to(base_url('estoque'))->with('msg', 'Insumo editado com sucesso!');
+        };
     }
 }

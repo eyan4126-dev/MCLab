@@ -25,10 +25,27 @@ document.getElementById('modalVisualizar').addEventListener('show.bs.modal', fun
 });
 
 // Modal de edição do insumo
-document.getElementById('modalEditar').addEventListener('show.bs.modal', function (event) {
-    const button = event.relatedTarget;
+document.getElementById('modalEditar').addEventListener('show.bs.modal', function (e) {
+    const t = e.relatedTarget;
 
-    document.getElementById('editId').value = button.getAttribute('data-bs-id');
-    document.getElementById('editNome').value = button.getAttribute('data-bs-nome');
-    document.getElementById('editDescricao').value = button.getAttribute('data-bs-descricao');
+    const id            = t.getAttribute('data-bs-id');
+    const nome          = t.getAttribute('data-bs-nome');
+    const risco         = t.getAttribute('data-bs-risco');
+    const unidade       = t.getAttribute('data-bs-unidade');
+    const descricao     = t.getAttribute('data-bs-descricao');
+    const quantidade    = t.getAttribute('data-bs-quantidade');
+    const estoqueMinimo = t.getAttribute('data-bs-estoque-minimo');
+    const validade      = t.getAttribute('data-bs-validade');
+
+    console.log('id capturado:', id); // debug - remova depois
+
+    document.getElementById('editId').value                      = id;
+    this.querySelector('[name="nome"]').value                    = nome;
+    this.querySelector('[name="descricao"]').value               = descricao;
+    this.querySelector('[name="quantidade_atual"]').value        = quantidade;
+    this.querySelector('[name="estoque_minimo"]').value          = estoqueMinimo;
+    this.querySelector('[name="data_validade"]').value           = validade;
+    this.querySelector('[name="risco"]').value                   = risco;
+    this.querySelector('[name="unidade_medida"]').value          = unidade;
+    this.querySelector('form').action = `${BASE_URL}editar_insumo/${id}`;
 });
