@@ -66,7 +66,7 @@
                         <div class="card-content">
                             <div>
                                 <p class="label">Alto Risco</p>
-                                <p class="value red"><?php $resumo['alto_risco'] ?></p>
+                                <p class="value red"><?php $resumo['risco_alto'] ?></p>
                             </div>
                             <i class="bx bx-error icon red"></i>
                         </div>
