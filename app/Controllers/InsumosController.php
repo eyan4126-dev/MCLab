@@ -10,10 +10,17 @@ class InsumosController extends BaseController
     {
         $model = new InsumosModel();
 
-        $dados['insumos'] = $model->buscarTodosInsumos();
+        $risco = $this->request->getGet('risco');
 
+        if ($risco) {
+            $dados['insumos'] = $model->buscarPorRisco($risco);
+        } else {
+            $dados['insumos'] = $model->buscarTodosInsumos();
+        }
+        
         return view('estoque', $dados);
     }
+
     public function cadastrarInsumo()
     {
         $model = new InsumosModel();
@@ -29,30 +36,5 @@ class InsumosController extends BaseController
         $model->inserirInsumo($nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade);
 
         return redirect()->to(base_url('estoque'));
-    }
-
-    public function filtrarEstoque()
-    {
-        $model = new InsumosModel();
-
-        // pega o filtro da URL
-        $risco = $this->request->getGet('risco');
-
-        // se existir filtro
-        if ($risco) {
-
-            $insumos = $model
-                ->where('risco', $risco)
-                ->findAll();
-
-        } else {
-
-            // sem filtro = todos
-            $insumos = $model->findAll();
-        }
-
-        return view('estoque', [
-            'insumos' => $insumos
-        ]);
     }
 }

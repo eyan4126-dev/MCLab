@@ -11,11 +11,7 @@ class InsumosModel extends Model
 
     public function buscarTodosInsumos()
     {
-        $db = \Config\Database::connect();
-
-        $sql = "SELECT id, nome, risco, unidade_medida, descricao, quantidade_atual, estoque_minimo, data_validade FROM insumos";
-
-        return $db->query($sql)->getResultArray();
+        return $this->findAll();
     }
 
     public function inserirInsumo($nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade)
@@ -27,4 +23,8 @@ class InsumosModel extends Model
         return $db->query($sql, [$nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade]);
     }
 
+    public function buscarPorRisco($risco)
+    {
+        return $this->where('risco', $risco)->findAll();
+    }
 }

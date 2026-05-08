@@ -52,41 +52,41 @@
 
                 <div class="cards">
 
-                    <div class="card">
+                    <div class="card" style="border-color: #0004ffff;">
                         <div class="card-content">
                             <div>
                                 <p class="label">Total de Insumos</p>
-                                <p class="value">5</p>
+                                <p class="value"><?php $resumo['total'] ?></p>
                             </div>
                             <i class="bx bx-package icon blue"></i>
                         </div>
                     </div>
 
-                    <div class="card border-red">
+                    <div class="card" style="border-color: #ff0000ff;">
                         <div class="card-content">
                             <div>
                                 <p class="label">Alto Risco</p>
-                                <p class="value red">2</p>
+                                <p class="value red"><?php $resumo['alto_risco'] ?></p>
                             </div>
                             <i class="bx bx-error icon red"></i>
                         </div>
                     </div>
 
-                    <div class="card border-orange">
+                    <div class="card" style="border-color: #ff8800ff;">
                         <div class="card-content">
                             <div>
                                 <p class="label">Abaixo do Mínimo</p>
-                                <p class="value orange">1</p>
+                                <p class="value orange"><?php $resumo['estoque_baixo'] ?></p>
                             </div>
                             <i class="bx bx-trending-down icon orange"></i>
                         </div>
                     </div>
 
-                    <div class="card border-green">
+                    <div class="card" style="border-color: #00b941ff;">
                         <div class="card-content">
                             <div>
                                 <p class="label">Movimentações</p>
-                                <p class="value green">3</p>
+                                <p class="value green"><?php $resumo['movimentacoes'] ?></p>
                             </div>
                             <i class="bx bx-trending-up icon green"></i>
                         </div>

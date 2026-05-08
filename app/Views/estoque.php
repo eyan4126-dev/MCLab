@@ -158,8 +158,13 @@
 
                                     <td><?= $i["id"] ?></td>
 
-                                    <td class="nome-click" data-bs-toggle="modal" data-bs-target="#modalInfo"
-                                        data-bs-nome="<?= $i["nome"] ?>" data-bs-desc="<?= $i["descricao"] ?>">
+                                    <td class="nome-click" data-bs-toggle="modal" data-bs-target="#modalVisualizar"
+                                            data-bs-id="<?= $i["id"] ?>" data-bs-nome="<?= $i["nome"] ?>"
+                                            data-bs-risco="<?= $i["risco"] ?>" data-bs-unidade="<?= $i["unidade_medida"] ?>"
+                                            data-bs-descricao="<?= $i["descricao"] ?>"
+                                            data-bs-quantidade="<?= $i["quantidade_atual"] ?>"
+                                            data-bs-estoque-minimo="<?= $i["estoque_minimo"] ?>"
+                                            data-bs-validade="<?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
 
                                         <?= $i["nome"] ?>
 
@@ -182,10 +187,12 @@
                                     <td class="acoes">
 
                                         <i class='bx bx-show icon' data-bs-toggle="modal" data-bs-target="#modalVisualizar"
-                                            data-bs-nome="<?= $i["nome"] ?>" data-bs-descricao="
-                                    <?= $i["descricao"] ?>" data-bs-quantidade="
-                                    <?= $i["quantidade_atual"] ?>" data-bs-validade="
-                                    <?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
+                                            data-bs-id="<?= $i["id"] ?>" data-bs-nome="<?= $i["nome"] ?>"
+                                            data-bs-risco="<?= $i["risco"] ?>" data-bs-unidade="<?= $i["unidade_medida"] ?>"
+                                            data-bs-descricao="<?= $i["descricao"] ?>"
+                                            data-bs-quantidade="<?= $i["quantidade_atual"] ?>"
+                                            data-bs-estoque-minimo="<?= $i["estoque_minimo"] ?>"
+                                            data-bs-validade="<?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
                                         </i>
 
                                         <i class='bx bx-pencil icon' data-bs-toggle="modal" data-bs-target="#modalEditar"
@@ -221,24 +228,45 @@
 
                         <!-- modal com informações do insumo -->
                         <div class="modal fade" id="modalVisualizar">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0 p-0" style="border-radius: 16px; overflow: hidden;">
 
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Detalhes do Insumo</h4>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    <div class="modal-header border-0 pb-0 px-4 pt-3">
+                                        <button type="button" class="btn-close ms-auto"
+                                            data-bs-dismiss="modal"></button>
                                     </div>
 
-                                    <div class="modal-body">
+                                    <div class="modal-body pt-0 px-4 pb-4">
+                                        <div class="mic-header">
+                                            <div>
+                                                <span class="mic-id">ID #<span id="viewId"></span></span>
+                                                <h2 class="mic-nome" id="viewNome"></h2>
+                                                <p class="mic-desc" id="viewDescricao"></p>
+                                            </div>
+                                            <span class="mic-badge" id="viewRiscoBadge"></span>
+                                        </div>
 
-                                        <p><strong>Nome:</strong> <span id="viewNome"></span></p>
+                                        <div class="mic-grid">
+                                            <div class="mic-stat">
+                                                <span class="mic-stat-label">Quantidade atual</span>
+                                                <p class="mic-stat-value">
+                                                    <span id="viewQuantidade"></span>
+                                                    <span class="mic-stat-unit" id="viewUnidade"></span>
+                                                </p>
+                                            </div>
+                                            <div class="mic-stat">
+                                                <span class="mic-stat-label">Estoque mínimo</span>
+                                                <p class="mic-stat-value">
+                                                    <span id="viewEstoqueMinimo"></span>
+                                                    <span class="mic-stat-unit" id="viewUnidadeMin"></span>
+                                                </p>
+                                            </div>
+                                        </div>
 
-                                        <p><strong>Descrição:</strong> <span id="viewDescricao"></span></p>
-
-                                        <p><strong>Quantidade:</strong> <span id="viewQuantidade"></span></p>
-
-                                        <p><strong>Validade:</strong> <span id="viewValidade"></span></p>
-
+                                        <div class="mic-validade">
+                                            <span class="mic-val-label">Validade</span>
+                                            <span class="mic-val-value" id="viewValidade"></span>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -262,10 +290,37 @@
                                             <input type="hidden" name="id" id="editId">
 
                                             <label>Nome</label>
-                                            <input type="text" name="nome" id="editNome">
+                                            <input type="text" name="nome" required>
+
+                                            <label>Nível de risco</label>
+                                            <select name="risco" required>
+                                                <option></option>
+                                                <option value="baixo">Baixo</option>
+                                                <option value="medio">Médio</option>
+                                                <option value="alto">Alto</option>
+                                            </select>
+
+                                            <label>Unidade de medida</label>
+                                            <select name="unidade_medida" required>
+                                                <option></option>
+                                                <option>kg</option>
+                                                <option>g</option>
+                                                <option>mg</option>
+                                                <option>L</option>
+                                                <option>ml</option>
+                                            </select>
 
                                             <label>Descrição</label>
-                                            <input type="text" name="descricao" id="editDescricao">
+                                            <input type="text" name="descricao" required>
+
+                                            <label>Quantidade</label>
+                                            <input type="number" name="quantidade_atual" required>
+
+                                            <label>Estoque mínimo</label>
+                                            <input type="number" name="estoque_minimo" required>
+
+                                            <label>Data de validade</label>
+                                            <input type="date" name="data_validade" required>
 
                                             <button type="submit">
                                                 Salvar Alterações
@@ -286,7 +341,6 @@
         </div>
     </div>
 
-    <script src="https://jsdelivr.net"></script>
     <script src="<?= base_url('public/js/script.js'); ?>"></script>
 
 </body>

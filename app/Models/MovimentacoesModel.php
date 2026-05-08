@@ -18,7 +18,7 @@ class MovimentacoesModel extends Model
         return $db->query($sql)->getResultArray();
     }
 
-    public function inserirMovimentacao($insumo_id, $usuario_id, $tipo, $quantidade, $data_movimentacao, $observacao)
+    public function cadastrarMovimentacao($insumo_id, $usuario_id, $tipo, $quantidade, $data_movimentacao, $observacao)
     {
         $db = \Config\Database::connect();
 

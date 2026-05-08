@@ -56,7 +56,7 @@
                 </button>
             </div>
 
-            <!-- The Modal -->
+            <!-- modal de cadastro de movimentações -->
             <div class="modal fade" id="modalMovimentação">
                 <div class="modal-dialog">
                     <div class="modal-content">

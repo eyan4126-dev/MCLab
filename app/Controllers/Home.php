@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\MovimentacoesModel;
 use App\Models\UsuariosModel;
 use App\Models\InsumosModel;
+use App\Models\DashboardModel;
 
 class Home extends BaseController
 {
@@ -47,7 +48,11 @@ class Home extends BaseController
 
     public function dashboard(): string
     {
-        return view('dashboard');
+        $model = new DashboardModel();
+
+        $data['resumo'] = $model->getResumo();
+
+        return view('dashboard', $data);
     }
 
     public function cadastro_insumo(): string
@@ -61,13 +66,13 @@ class Home extends BaseController
     }
 
     public function movimentacoes()
-{
-    $model = new MovimentacoesModel();
+    {
+        $model = new MovimentacoesModel();
 
-    $data['movimentacoes'] = $model->findAll();
+        $data['movimentacoes'] = $model->findAll();
 
-    return view('movimentacoes', $data);
-}
+        return view('movimentacoes', $data);
+    }
 
     public function cadastro(): string
     {
@@ -85,7 +90,7 @@ class Home extends BaseController
 
     public function cadastrarMovimentacao()
     {
-        $model = new InsumosModel();
+        $model = new MovimentacoesModel();
 
         $insumo_id = $this->request->getPost("insumo_id");
         $usuario_id = $this->request->getPost("usuario_id");
@@ -96,6 +101,6 @@ class Home extends BaseController
 
         $model->cadastrarMovimentacao($insumo_id, $usuario_id, $tipo, $quantidade, $data_movimentacao, $observacao);
 
-        return redirect()->to(base_url('estoque'));
+        return redirect()->to(base_url('movimentacoes'));
     }
 }
