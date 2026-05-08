@@ -144,6 +144,7 @@
                 <table class="tabela-moderna">
                     <thead>
                         <tr>
+                            <th></th>
                             <th>ID</th>
                             <th>Nome</th>
                             <th>Risco</th>
@@ -157,10 +158,13 @@
 
                         <?php if (!empty($insumos)): ?>
 
+                            <?php $ordem = 1; ?>
                             <?php foreach ($insumos as $i): ?>
                                 <tr>
 
-                                    <td><?= $i["id"] ?></td>
+                                    <td><?= $ordem++ ?></td>
+
+                                    <td>#INS<?= str_pad($i["id"], 3, "0", STR_PAD_LEFT) ?></td>
 
                                     <!-- HIPERLINK NO NOME DO INSUMO PARA ABRIR MODAL DE INFORMAÇÕES -->
                                     <td class="nome-click" data-bs-toggle="modal" data-bs-target="#modalVisualizar"

@@ -121,12 +121,13 @@
                 </div>
             </div>
 
-            <div class="table-container mt-4 mx-4">
+            <div class="table-container mt-3 mx-4">
 
                 <div class="table-responsive">
                     <table class="tabela-moderna">
                         <thead>
                             <tr>
+                                <th></th>
                                 <th>Data/Hora</th>
                                 <th>Tipo</th>
                                 <th>Insumo</th>
@@ -138,9 +139,11 @@
                         <tbody>
                             <?php if (!empty($movimentacoes)): ?>
 
+                                <?php $ordem = 1; ?>
                                 <?php foreach (array_reverse($movimentacoes) as $mov): ?>
                                     <tr>
 
+                                        <td><?= $ordem++ ?></td>
                                         <td>
                                             <?= date("d/m/Y H:i", strtotime($mov["data_movimentacao"])) ?>
                                         </td>

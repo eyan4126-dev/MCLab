@@ -243,6 +243,12 @@ body {
     background: #f3f4f6;
 }
 
+.tabela-moderna th:first-child,
+.tabela-moderna td:first-child {
+    width: 40px;
+    text-align: center;
+}
+
 .btn-cadastro {
     background-color: #0b1120;
     border: none;
