@@ -195,10 +195,7 @@
                                             data-bs-validade="<?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
                                         </i>
 
-                                        <i class='bx bx-pencil icon' data-bs-toggle="modal" data-bs-target="#modalEditar"
-                                            data-bs-id="<?= $i["id"] ?>" data-bs-nome="
-                                    <?= $i["nome"] ?>" data-bs-descricao="
-                                    <?= $i["descricao"] ?>">
+                                        <i class='bx bx-pencil icon' data-bs-toggle="modal" data-bs-target="#modalEditar">
                                         </i>
 
                                     </td>
