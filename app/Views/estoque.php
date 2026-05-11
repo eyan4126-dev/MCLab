@@ -15,6 +15,7 @@
 
     <div class="layout">
 
+        <!-- BARRA LATERAL DE NAVEGAÇÃO -->
         <div class="sidebar">
             <div class="logo">
                 <img src="public/img/mclab-icon.png" width="50%">
@@ -49,11 +50,14 @@
                 <h2>Estoque</h2>
             </div>
 
+            <!-- BOTÃO PARA CADASTRAR INSUMOS -->
             <div class="px-4 mt-3 d-flex align-items-center justify-content-between">
                 <button type="button" class="btn-cadastro" data-bs-toggle="modal" data-bs-target="#modalCadastro"
                     style="margin-top: 0.5rem;">
                     Cadastrar Insumo <img src="public/img/mais.png" width="20px" height="20px"></img>
                 </button>
+
+                <!-- BOTÕES PARA FILTRAR INSUMOS -->
                 <div class="filtros m-0">
 
                     <a href="<?= base_url('estoque') ?>"
@@ -79,7 +83,7 @@
                 </div>
             </div>
 
-            <!-- modal para cadastrar insumos -->
+            <!-- MODAL PARA CADASTRAR INSUMOS -->
             <div class="modal fade" id="modalCadastro">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -100,9 +104,9 @@
                                 <label>Nível de risco</label>
                                 <select name="risco" required>
                                     <option></option>
-                                    <option value="baixo">🟢 Baixo</option>
-                                    <option value="medio">🟡 Médio</option>
-                                    <option value="alto">🔴 Alto</option>
+                                    <option>Baixo</option>
+                                    <option>Médio</option>
+                                    <option>Alto</option>
                                 </select>
 
                                 <label>Unidade de medida</label>
@@ -135,11 +139,12 @@
                 </div>
             </div>
 
-            <!-- lista de insumos -->
+            <!-- TABELA DE INSUMOS -->
             <div class="table-container mt-3 mx-4">
                 <table class="tabela-moderna">
                     <thead>
                         <tr>
+                            <th></th>
                             <th>ID</th>
                             <th>Nome</th>
                             <th>Risco</th>
@@ -153,18 +158,22 @@
 
                         <?php if (!empty($insumos)): ?>
 
+                            <?php $ordem = 1; ?>
                             <?php foreach ($insumos as $i): ?>
                                 <tr>
 
-                                    <td><?= $i["id"] ?></td>
+                                    <td><?= $ordem++ ?></td>
 
+                                    <td>#INS<?= str_pad($i["id"], 3, "0", STR_PAD_LEFT) ?></td>
+
+                                    <!-- HIPERLINK NO NOME DO INSUMO PARA ABRIR MODAL DE INFORMAÇÕES -->
                                     <td class="nome-click" data-bs-toggle="modal" data-bs-target="#modalVisualizar"
-                                            data-bs-id="<?= $i["id"] ?>" data-bs-nome="<?= $i["nome"] ?>"
-                                            data-bs-risco="<?= $i["risco"] ?>" data-bs-unidade="<?= $i["unidade_medida"] ?>"
-                                            data-bs-descricao="<?= $i["descricao"] ?>"
-                                            data-bs-quantidade="<?= $i["quantidade_atual"] ?>"
-                                            data-bs-estoque-minimo="<?= $i["estoque_minimo"] ?>"
-                                            data-bs-validade="<?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
+                                        data-bs-id="<?= $i["id"] ?>" data-bs-nome="<?= $i["nome"] ?>"
+                                        data-bs-risco="<?= $i["risco"] ?>" data-bs-unidade="<?= $i["unidade_medida"] ?>"
+                                        data-bs-descricao="<?= $i["descricao"] ?>"
+                                        data-bs-quantidade="<?= $i["quantidade_atual"] ?>"
+                                        data-bs-estoque-minimo="<?= $i["estoque_minimo"] ?>"
+                                        data-bs-validade="<?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
 
                                         <?= $i["nome"] ?>
 
@@ -186,16 +195,24 @@
 
                                     <td class="acoes">
 
+                                        <!-- ÍCONE PARA VISUALIZAR INFORMAÇÕES DO INSUMO -->
                                         <i class='bx bx-show icon' data-bs-toggle="modal" data-bs-target="#modalVisualizar"
                                             data-bs-id="<?= $i["id"] ?>" data-bs-nome="<?= $i["nome"] ?>"
                                             data-bs-risco="<?= $i["risco"] ?>" data-bs-unidade="<?= $i["unidade_medida"] ?>"
                                             data-bs-descricao="<?= $i["descricao"] ?>"
                                             data-bs-quantidade="<?= $i["quantidade_atual"] ?>"
                                             data-bs-estoque-minimo="<?= $i["estoque_minimo"] ?>"
-                                            data-bs-validade="<?= date("d/m/Y", strtotime($i["data_validade"])) ?>">
+                                            data-bs-validade="<?= $i["data_validade"] ?>">
                                         </i>
 
-                                        <i class='bx bx-pencil icon' data-bs-toggle="modal" data-bs-target="#modalEditar">
+                                        <!-- ÍCONE PARA EDITAR INFORMAÇÕES DO INSUMO -->
+                                        <i class='bx bx-pencil icon' data-bs-toggle="modal" data-bs-target="#modalEditar"
+                                            data-bs-id="<?= $i["id"] ?>" data-bs-nome="<?= $i["nome"] ?>"
+                                            data-bs-risco="<?= $i["risco"] ?>" data-bs-unidade="<?= $i["unidade_medida"] ?>"
+                                            data-bs-descricao="<?= $i["descricao"] ?>"
+                                            data-bs-quantidade="<?= $i["quantidade_atual"] ?>"
+                                            data-bs-estoque-minimo="<?= $i["estoque_minimo"] ?>"
+                                            data-bs-validade="<?= $i["data_validade"] ?>">
                                         </i>
 
                                     </td>
@@ -203,6 +220,7 @@
                                 </tr>
                             <?php endforeach; ?>
 
+                            <!-- CONDIÇÃO PARA CASO NÃO HAJA INSUMO CADASTRADO -->
                         <?php else: ?>
 
                             <tr>
@@ -223,122 +241,119 @@
 
                         <?php endif; ?>
 
-                        <!-- modal com informações do insumo -->
-                        <div class="modal fade" id="modalVisualizar">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content border-0 p-0" style="border-radius: 16px; overflow: hidden;">
-
-                                    <div class="modal-header border-0 pb-0 px-4 pt-3">
-                                        <button type="button" class="btn-close ms-auto"
-                                            data-bs-dismiss="modal"></button>
-                                    </div>
-
-                                    <div class="modal-body pt-0 px-4 pb-4">
-                                        <div class="mic-header">
-                                            <div>
-                                                <span class="mic-id">ID #<span id="viewId"></span></span>
-                                                <h2 class="mic-nome" id="viewNome"></h2>
-                                                <p class="mic-desc" id="viewDescricao"></p>
-                                            </div>
-                                            <span class="mic-badge" id="viewRiscoBadge"></span>
-                                        </div>
-
-                                        <div class="mic-grid">
-                                            <div class="mic-stat">
-                                                <span class="mic-stat-label">Quantidade atual</span>
-                                                <p class="mic-stat-value">
-                                                    <span id="viewQuantidade"></span>
-                                                    <span class="mic-stat-unit" id="viewUnidade"></span>
-                                                </p>
-                                            </div>
-                                            <div class="mic-stat">
-                                                <span class="mic-stat-label">Estoque mínimo</span>
-                                                <p class="mic-stat-value">
-                                                    <span id="viewEstoqueMinimo"></span>
-                                                    <span class="mic-stat-unit" id="viewUnidadeMin"></span>
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="mic-validade">
-                                            <span class="mic-val-label">Validade</span>
-                                            <span class="mic-val-value" id="viewValidade"></span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- modal para editar insumo -->
-                        <div class="modal fade" id="modalEditar">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Editar Insumo</h4>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                    </div>
-
-                                    <div class="modal-body">
-
-                                        <form action="<?= base_url('editar_insumo') ?>" method="POST">
-
-                                            <input type="hidden" name="id" id="editId">
-
-                                            <label>Nome</label>
-                                            <input type="text" name="nome" required>
-
-                                            <label>Nível de risco</label>
-                                            <select name="risco" required>
-                                                <option></option>
-                                                <option value="baixo">Baixo</option>
-                                                <option value="medio">Médio</option>
-                                                <option value="alto">Alto</option>
-                                            </select>
-
-                                            <label>Unidade de medida</label>
-                                            <select name="unidade_medida" required>
-                                                <option></option>
-                                                <option>kg</option>
-                                                <option>g</option>
-                                                <option>mg</option>
-                                                <option>L</option>
-                                                <option>ml</option>
-                                            </select>
-
-                                            <label>Descrição</label>
-                                            <input type="text" name="descricao" required>
-
-                                            <label>Quantidade</label>
-                                            <input type="number" name="quantidade_atual" required>
-
-                                            <label>Estoque mínimo</label>
-                                            <input type="number" name="estoque_minimo" required>
-
-                                            <label>Data de validade</label>
-                                            <input type="date" name="data_validade" required>
-
-                                            <button type="submit">
-                                                Salvar Alterações
-                                            </button>
-
-                                        </form>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
                     </tbody>
                 </table>
+
             </div>
 
         </div>
     </div>
 
-    <script src="<?= base_url('public/js/script.js'); ?>"></script>
+    <!-- MODAL COM INFORMAÇÕES DO INSUMO -->
+    <div class="modal fade" id="modalVisualizar">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 p-0" style="border-radius: 16px; overflow: hidden;">
+
+                <div class="modal-header border-0 pb-0 px-4 pt-3">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body pt-0 px-4 pb-4">
+                    <div class="mic-header">
+                        <div>
+                            <span class="mic-id">ID #<span id="viewId"></span></span>
+                            <h2 class="mic-nome" id="viewNome"></h2>
+                            <p class="mic-desc" id="viewDescricao"></p>
+                        </div>
+                        <span class="mic-badge" id="viewRiscoBadge"></span>
+                    </div>
+
+                    <div class="mic-grid">
+                        <div class="mic-stat">
+                            <span class="mic-stat-label">Quantidade atual</span>
+                            <p class="mic-stat-value">
+                                <span id="viewQuantidade"></span>
+                                <span class="mic-stat-unit" id="viewUnidade"></span>
+                            </p>
+                        </div>
+                        <div class="mic-stat">
+                            <span class="mic-stat-label">Estoque mínimo</span>
+                            <p class="mic-stat-value">
+                                <span id="viewEstoqueMinimo"></span>
+                                <span class="mic-stat-unit" id="viewUnidadeMin"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mic-validade">
+                        <span class="mic-val-label">Validade</span>
+                        <span class="mic-val-value" id="viewValidade"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PARA EDITAR INSUMO -->
+    <div class="modal fade" id="modalEditar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Editar Insumo</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="<?= base_url('editar_insumo/' . $i['id']) ?>" method="POST">
+
+                        <input type="hidden" name="id" id="editId">
+
+                        <label>Nome</label>
+                        <input type="text" name="nome" required>
+
+                        <label>Nível de risco</label>
+                        <select name="risco" required>
+                            <option></option>
+                            <option value="baixo">Baixo</option>
+                            <option value="medio">Médio</option>
+                            <option value="alto">Alto</option>
+                        </select>
+
+                        <label>Unidade de medida</label>
+                        <select name="unidade_medida" required>
+                            <option></option>
+                            <option value="kg">kg</option>
+                            <option value="g">g</option>
+                            <option value="mg">mg</option>
+                            <option value="L">L</option>
+                            <option value="ml">ml</option>
+                        </select>
+
+                        <label>Descrição</label>
+                        <input type="text" name="descricao" required>
+
+                        <label>Quantidade</label>
+                        <input type="number" name="quantidade_atual" required>
+
+                        <label>Estoque mínimo</label>
+                        <input type="number" name="estoque_minimo" required>
+
+                        <label>Data de validade</label>
+                        <input type="date" name="data_validade" required>
+
+                        <button type="submit">Salvar Alterações</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="<?= base_url('public/js/script.js'); ?>"> const BASE_URL = "<?= base_url() ?>"; </script>
 
 </body>
 
