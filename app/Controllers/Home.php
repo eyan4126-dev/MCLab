@@ -10,7 +10,6 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        #return view('index');
         return view('index');
     }
 
@@ -34,8 +33,8 @@ class Home extends BaseController
     {
         $model = new UsuariosModel();
 
-        $usuario = $_POST['usuario'];
-        $senha = $_POST['senha'];
+        $usuario = $this->request->getPost('usuario');
+        $senha = $this->request->getPost('senha');
 
         $usuario = $model->cadastrar($usuario, $senha);
 
@@ -44,6 +43,11 @@ class Home extends BaseController
         } else {
             return redirect()->to(base_url('erro'));
         }
+    }
+
+    public function erro(): string
+    {
+        return view('erro');
     }
 
     public function dashboard(): string

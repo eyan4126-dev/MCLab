@@ -52,7 +52,7 @@ class InsumosController extends BaseController
         $data_validade = $this->request->getPost("data_validade");
 
         if($model->atualizarInsumo($id, $nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade)) {
-            return redirect()->to(base_url('estoque'))->with('msg', 'Insumo editado com sucesso!');
+            return redirect()->to(base_url('estoque'));
         };
     }
 }

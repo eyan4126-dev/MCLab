@@ -19,6 +19,11 @@ class InsumosModel extends Model
         return $this->find($id);
     }
 
+    public function buscarPorRisco($risco)
+    {
+        return $this->where('risco', $risco)->findAll();
+    }
+
     public function atualizarInsumo($id, $nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade)
     {
         $db = \Config\Database::connect();
@@ -37,10 +42,5 @@ class InsumosModel extends Model
                 VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         return $db->query($sql, [$nome, $risco, $unidade_medida, $descricao, $quantidade_atual, $estoque_minimo, $data_validade]);
-    }
-
-    public function buscarPorRisco($risco)
-    {
-        return $this->where('risco', $risco)->findAll();
     }
 }

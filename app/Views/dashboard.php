@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="<?= base_url('public/css/dash_style.css'); ?>">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="<?= base_url('public/css/globals.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/dash_style.css'); ?>">
 </head>
 
 <body>
@@ -15,8 +16,9 @@
     <div class="layout">
 
         <div class="sidebar">
+
             <div class="logo">
-                <img src="public/img/mclab-icon.png" width="50%">
+                <img src="public/img/mclab-icon.png" draggable="false" alt="Logo">
                 <h3>MCLab</h3>
             </div>
 
