@@ -152,7 +152,9 @@
                                         <td>
                                             <div class="tipo-cell">
 
-                                                <span class="tipo-icon <?= strtolower($mov["tipo"]) ?>"></span>
+                                                <span class="tipo-icon <?= strtolower($mov["tipo"]) ?>">
+                                                    <i class='bx <?= $mov["tipo"] == "entrada" ? "bx-trending-up" : "bx-trending-down" ?>'></i>
+                                                </span>
 
                                                 <span class="badge-tipo <?= strtolower($mov["tipo"]) ?>">
                                                     <?= $mov["tipo"] ?>

@@ -4,14 +4,15 @@
     gap: 8px;
 }
 
-.tipo-icon {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+.tipo-icon i {
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.tipo-icon.entrada { background: #22c55e; }
-.tipo-icon.saida   { background: #ef4444; }
+.tipo-icon.entrada i {color: #16a34a;}
+.tipo-icon.saida i {color: #dc2626;}
 
 .badge-tipo {
     padding: 4px 10px;
