@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Home</title>
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/css/globals.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('public/css/dash_style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/home_style.css'); ?>">
 </head>
 
 <body>
@@ -25,8 +25,8 @@
             <div class="menu">
                 <ul>
                     <li class="active">
-                        <a href="dashboard">
-                            <i class='bx bx-grid-alt'></i> Dashboard
+                        <a href="home">
+                            <i class='bx bx-grid-alt'></i> Home
                         </a>
                     </li>
                     <li>
@@ -47,10 +47,10 @@
         <div class="content">
 
             <div class="cabecalho">
-                <h2>Dashboard</h2>
+                <h2>Home</h2>
             </div>
 
-            <div class="dashboard">
+            <div class="home">
 
                 <div class="cards">
 
@@ -92,22 +92,6 @@
                             </div>
                             <i class="bx bx-trending-up icon green"></i>
                         </div>
-                    </div>
-
-                </div>
-
-                <div class="charts">
-
-                    <div class="chart-card">
-                        <h3>Distribuição por Nível de Risco</h3>
-                        <div class="chart-container">
-                            <canvas id="pieChart"></canvas>
-                        </div>
-                    </div>
-
-                    <div class="chart-card">
-                        <h3>Níveis de Estoque</h3>
-                        <canvas id="barChart"></canvas>
                     </div>
 
                 </div>

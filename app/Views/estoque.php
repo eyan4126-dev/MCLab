@@ -26,8 +26,8 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="dashboard">
-                            <i class='bx bx-grid-alt'></i> Dashboard
+                        <a href="home">
+                            <i class='bx bx-grid-alt'></i> Home
                         </a>
                     </li>
                     <li class="active">

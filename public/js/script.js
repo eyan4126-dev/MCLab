@@ -37,8 +37,6 @@ document.getElementById('modalEditar').addEventListener('show.bs.modal', functio
     const estoqueMinimo = t.getAttribute('data-bs-estoque-minimo');
     const validade      = t.getAttribute('data-bs-validade');
 
-    console.log('id capturado:', id); // debug - remova depois
-
     document.getElementById('editId').value                      = id;
     this.querySelector('[name="nome"]').value                    = nome;
     this.querySelector('[name="descricao"]').value               = descricao;

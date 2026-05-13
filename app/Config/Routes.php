@@ -17,8 +17,8 @@ $routes->get('cadastrar','Home::cadastro');
 //rota para página de erro de login
 $routes->get('erro','Home::erro');
 
-// rota do login/sidebar para página do dashboard
-$routes->get('dashboard','Home::dashboard');
+// rota do login/sidebar para página do home
+$routes->get('home','Home::home');
 
 // rota do sidebar para página do estoque
 $routes->get('estoque','InsumosController::listarInsumos');

@@ -19,15 +19,17 @@
                 <h1>Login</h1>
             </div>
             <div class="input-box">
-                <input name="usuario" placeholder="Usuário" type="text" readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" required>
+                <input name="usuario" id="usuario" placeholder="Usuário" type="text" 
+                    onfocus="this.removeAttribute('readonly');" autocomplete="off" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input name="senha" placeholder="Senha" type="password" readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" required>
+                <input name="senha" placeholder="Senha" type="password" 
+                    onfocus="this.removeAttribute('readonly');" autocomplete="off" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
 
-            <button type="submit" class="login">Login</button>
+            <button type="submit" class="login" onclick="teste()">Login</button>
 
             <div class="register-link">
                 <p>Não tem uma conta? <a href="cadastrar">Cadastre-se</a></p>
@@ -36,5 +38,17 @@
     </div>
 
 </body>
+
+<script>
+    function teste() {
+
+        let usuario = document.getElementById("usuario").value;
+
+        if (usuario == "") {
+            
+            return false;
+        }
+    }
+</script>
 
 </html>

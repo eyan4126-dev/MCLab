@@ -3,7 +3,6 @@
 namespace App\Controllers;
 use App\Models\MovimentacoesModel;
 use App\Models\UsuariosModel;
-use App\Models\InsumosModel;
 use App\Models\DashboardModel;
 
 class Home extends BaseController
@@ -23,7 +22,7 @@ class Home extends BaseController
         $usuario = $model->autenticar($usuario, $senha);
 
         if ($usuario) {
-            return redirect()->to(base_url('dashboard'));
+            return redirect()->to(base_url('home'));
         } else {
             return redirect()->to(base_url('erro'));
         }
@@ -50,13 +49,13 @@ class Home extends BaseController
         return view('erro');
     }
 
-    public function dashboard(): string
+    public function home(): string
     {
         $model = new DashboardModel();
 
         $data['resumo'] = $model->getResumo();
 
-        return view('dashboard', $data);
+        return view('home', $data);
     }
 
     public function cadastro(): string

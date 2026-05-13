@@ -110,6 +110,7 @@ body {
 
 .layout {
     display: flex;
+    min-height: 100vh;
 }
 
 .content {
@@ -118,6 +119,7 @@ body {
     background-color: #fff;
     margin-left: 215px;
     align-items: center;
+    min-height: 100vh;
 }
 
 .cabecalho {
