@@ -14,6 +14,14 @@
 
     <div class="container">
         <form action="<?= base_url('cadastrar') ?>" method="POST">
+            
+            <a href="<?= base_url('/') ?>">
+                <div class="voltar">
+                    <i class="bx bx-arrow-back"></i>
+                    <p>Voltar</p>
+                </div>
+            </a>    
+        
             <div class="header-form">
                 <img src="public/img/mclab-icon.png" draggable="false" alt="Logo" class="logo-img">
                 <h1>Cadastre-se</h1>

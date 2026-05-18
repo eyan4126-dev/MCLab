@@ -29,7 +29,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px
+    gap: 5px;
+    padding-top: 20px;
 }
 
 .logo-img {
@@ -107,4 +108,34 @@ body {
 
 .register-link a:hover {
     text-decoration: underline;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    width: fit-content;
+    transition: color 0.5s;
+}
+
+.voltar:hover {
+    color: #dcdcdc;
+}
+
+.voltar i {
+    font-size: 18px;
+}
+
+.voltar p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.container a {
+    text-decoration: none;
 }
