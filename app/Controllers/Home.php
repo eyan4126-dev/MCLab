@@ -7,48 +7,6 @@ use App\Models\DashboardModel;
 
 class Home extends BaseController
 {
-    public function index(): string
-    {
-        return view('index');
-    }
-
-    public function autenticar()
-    {
-        $model = new UsuariosModel();
-
-        $usuario = $this->request->getPost('usuario');
-        $senha = $this->request->getPost('senha');
-
-        $usuario = $model->autenticar($usuario, $senha);
-
-        if ($usuario) {
-            return redirect()->to(base_url('home'));
-        } else {
-            return redirect()->to(base_url('erro'));
-        }
-    }
-
-    public function cadastrar()
-    {
-        $model = new UsuariosModel();
-
-        $usuario = $this->request->getPost('usuario');
-        $senha = $this->request->getPost('senha');
-
-        $usuario = $model->cadastrar($usuario, $senha);
-
-        if ($usuario) {
-            return redirect()->to(base_url('/'));
-        } else {
-            return redirect()->to(base_url('erro'));
-        }
-    }
-
-    public function erro(): string
-    {
-        return view('erro');
-    }
-
     public function home(): string
     {
         $model = new DashboardModel();
@@ -56,11 +14,6 @@ class Home extends BaseController
         $data['resumo'] = $model->getResumo();
 
         return view('home', $data);
-    }
-
-    public function cadastro(): string
-    {
-        return view('cadastro');
     }
 
     public function listarMovimentacoes()

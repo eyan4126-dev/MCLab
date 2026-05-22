@@ -9,13 +9,13 @@ use CodeIgniter\Router\RouteCollection;
 /* ------ ROTAS GET PARA REDIRECIONAMENTO DE PÁGINA ------ */
 
 // rota para página de login
-$routes->get('/', 'Home::index');
+$routes->get('/', 'LoginController::index');
 
 //rota para página de cadastro de usuário
-$routes->get('cadastrar','Home::cadastro');
+$routes->get('cadastrar','LoginCOntroller::cadastro');
 
 //rota para página de erro de login
-$routes->get('erro','Home::erro');
+$routes->get('erro','LoginController::erro');
 
 // rota do login/sidebar para página do home
 $routes->get('home','Home::home');
@@ -30,10 +30,10 @@ $routes->get('movimentacoes','Home::listarMovimentacoes');
 /* ------ ROTAS POST PARA ENVIO DE DADOS ------ */
 
 // rota dos dados de login
-$routes->post('autenticar','Home::autenticar');
+$routes->post('autenticar','LoginController::autenticar');
 
 //rota dos dados de cadastro de usuário
-$routes->post('cadastrar','Home::cadastrar');
+$routes->post('cadastrar','LoginController::cadastrar');
 
 // rota dos dados de cadastro de insumos
 $routes->post('cadastrar_insumo','InsumosController::cadastrarInsumo');

@@ -32,3 +32,5 @@ Thumbs.db
 # TESTES (opcional)
 # =========================
 /phpunit.result.cache
+build/
+.phpunit.cache
